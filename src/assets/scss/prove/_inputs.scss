@@ -14,7 +14,7 @@
     @include box-shadow(none);
 
     &:focus{
-        border: 1px solid $dark-gray;
+        border: 1px solid #DCDCDC;
         @include box-shadow(none);
         outline: 0 !important;
         color: $default-color;
@@ -133,44 +133,27 @@
 }
 
 .input-group.search{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    /* Input Shadow Primary */
+
+    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
+    border-radius: 8px;
   .form-control,
   .form-control + .input-group-prepend .input-group-text,
   .form-control + .input-group-append .input-group-text{
-      border: 1px solid #DCDCDC;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-left: none;
-      background-color: $opacity-gray-3;
-      &:focus,
-      &:active,
-      &:active{
-          background-color: $opacity-gray-5;
-      }
+      // border: 1px solid #DCDCDC;
+      // border-top-right-radius: 8px;
+      // border-bottom-right-radius: 8px;
+      // border-left: none;
+      // background-color: $opacity-gray-3;
   }
-
-  .form-control{
-      box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
-      height: 40px;
-      &:focus{
-          & + .input-group-prepend .input-group-text,
-          & + .input-group-append .input-group-text{
-              background-color: $opacity-gray-5;
-          }
-      }
-  }
-
   .input-group-prepend .input-group-text,
   .input-group-append .input-group-text{
       border: 1px solid #DCDCDC;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
       border-right: none;
-
-      &:focus,
-      &:active,
-      &:active{
-          background-color: $opacity-gray-5;
-      }
   }
 }
 
