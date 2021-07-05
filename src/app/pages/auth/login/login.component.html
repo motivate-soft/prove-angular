@@ -2,44 +2,44 @@
     <div class="middle">
         <div class="card login">
             <div class="card-header" *ngIf="!isLoginWithProveApp">
-              <img src="assets/svg/logo.svg" style="width: 159px;margin-bottom: 25px;"/>
+              <img src="assets/svg/logo.svg" style="width: 159px;"/>
             </div>
             <div class="card-body">
               <div *ngIf="!isLoginWithProveApp">
-                <h5 style="font-weight: bold;">Welcome back</h5>
-                <p>Log in using your email to continue.</p>
-                <p style="margin-top: -15px;">New here? <a class="text-primary">Create a account</a></p>
-                <form style="margin-top: 30px;">
-                  <p style="text-align: left !important;">Email</p>
+                <h5 style="font-weight: bold;font-size: 24px;margin: 16px 0px;color: #141414;">Welcome back</h5>
+                <p style="font-size: 16px;line-height: 24px;color: #808080;">Log in using your email to continue.</p>
+                <p style="margin-top: -12px;font-size: 16px;line-height: 24px;color: #808080;">New here? <a class="text-primary">Create a account</a></p>
+                <form style="margin-top: 25px;">
+                  <p style="text-align: left !important;font-size: 14px;line-height: 22px;color: #808080;">Email</p>
                   <div class="input-group search" style="margin-top: -15px;">
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <i class="nc-icon nc-email-85"></i>
                       </div>
                     </div>
-                    <input type="email" value="" class="form-control" placeholder="Email">
+                    <input type="email" value="" class="form-control" placeholder="Email" style="font-size: 16px;line-height: 24px;color: #141414;">
                   </div>
-                  <p style="text-align: left !important;">Password</p>
+                  <p style="text-align: left !important;font-size: 14px;line-height: 22px;color: #808080;">Password</p>
                   <div class="input-group search" style="margin-top: -15px;">
                       <div class="input-group-append">
                         <div class="input-group-text">
                           <i class="nc-icon nc-key-25"></i>
                         </div>
                       </div>
-                      <input type="password" value="" class="form-control" placeholder="Password">
+                      <input type="password" value="" class="form-control" placeholder="Password" style="font-size: 16px;line-height: 24px;color: #141414;">
                     </div>
                 </form>
-                <div class="row">
-                  <div class="col-6">
+                <div class="row" style="margin: 8px 0px;">
+                  <div class="col-6" style="padding: 0px !important;">
                     <label class="check-container">Remember me
                       <input type="checkbox">
                       <span class="checkmark"></span>
                     </label>
                   </div>
-                  <div class="col-6"><a class="text-primary">Forgot password?</a></div>
+                  <div class="col-6" style="padding: 0px !important;"><a class="text-primary">Forgot password?</a></div>
                 </div>
                 <button class="btn btn-warning btn-block btn-login" (click)="login()">Log in</button>
-                <p><a class="text-primary" (click)="changeLoginType('app')">Log in using Prove app</a></p>
+                <p><a class="text-primary" style="font-size: 16px;" (click)="changeLoginType('app')">Log in using Prove app</a></p>
               </div>
 
               <div *ngIf="isLoginWithProveApp">

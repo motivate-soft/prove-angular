@@ -17,12 +17,29 @@
     margin-right: auto;
     width: 350px;
     text-align: center;
+    background: #FFFFFF;
+    /* Whitesmoke */
+
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    /* Input Shadow Primary */
+
+    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
+    border-radius: 8px;
+    padding: 0px 20px;
 }
 
 .btn-login {
     border-radius: 10px;
     color: black;
     text-transform: initial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    background-color: #FFC60D !important;
+    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.16) !important;
+    border-radius: 8px !important;
+    margin: 16px 0px;
 }
 
 .qr-img {
@@ -42,15 +59,20 @@
 .card {
     box-shadow: none;
 }
+.card-body {
+  margin: 48px 0px;
+}
 
 /* The check-container */
 .check-container {
     display: block;
     position: relative;
-    padding-left: 20px;
+    padding-left: 13px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500;
+    margin: 0px;
     color: rgba(0, 0, 0, 0.712);
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -70,10 +92,10 @@
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 3px;
-    height: 15px;
-    width: 15px;
+    height: 14.67px;
+    width: 14.67px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -118,4 +140,5 @@
     color: #0D6EFD;
     cursor: pointer;
     text-decoration: none;
+    font-size: 16px;
 }
