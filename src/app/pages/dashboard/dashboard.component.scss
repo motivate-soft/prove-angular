@@ -68,45 +68,62 @@
 */
 
  .dash-toggle {
-    position: absolute;
-    width: 320px;
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    float: right;
+
+    position: static;
+    width: 339px !important;
     height: 40px;
-    right: 50px;
-    top: 100px;
+    right: 0px;
+    top: calc(50% - 40px/2);
+
     /* Gainsboro */
+
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
     border-radius: 8px;
-    align-items: center;
-    padding: 0px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
  }
 
  .dash-toggle button {
+    /* Auto Layout */
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    color: #808080;
-    text-transform: initial;
-    background-color: transparent;
-
-    width: 105px;
-    border-radius: 8px;
     padding: 8px 24px;
+    text-transform: initial;
+    position: static;
+    width: 112px;
+    height: 40px;
+    left: 192px;
+    top: 0px;
+
+    border-radius: 8px;
 
     /* Inside Auto Layout */
-    margin: 0.5px;
 
-    //styleName: Paragraph Bold;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    text-align: center;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
 }
 
 .dash-toggle button:hover {
-    background-color: transparent !important;
     color: #141414 !important;
-}
-
-.dash-toggle button.active {
-    color: #141414 !important;
-    background-color: #FFC60D;
+    background: #FFC60D !important;
+    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.16);
+    border-radius: 8px;
 }
