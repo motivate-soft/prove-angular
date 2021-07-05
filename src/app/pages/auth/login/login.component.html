@@ -6,11 +6,11 @@
             </div>
             <div class="card-body">
               <div *ngIf="!isLoginWithProveApp">
-                <h5 style="font-weight: bold;font-size: 24px;margin: 16px 0px;color: #141414;">Welcome back</h5>
-                <p style="font-size: 16px;line-height: 24px;color: #808080;">Log in using your email to continue.</p>
-                <p style="margin-top: -12px;font-size: 16px;line-height: 24px;color: #808080;">New here? <a class="text-primary">Create a account</a></p>
+                <h5 class="title">Welcome back</h5>
+                <p class="subtitle">Log in using your email to continue.</p>
+                <p class="subtitle" style="margin-top: -12px;">New here? <a class="text-primary">Create a account</a></p>
                 <form style="margin-top: 25px;">
-                  <p style="text-align: left !important;font-size: 14px;line-height: 22px;color: #808080;">Email</p>
+                  <p class="input-label">Email</p>
                   <div class="input-group search" style="margin-top: -15px;">
                     <div class="input-group-append">
                       <div class="input-group-text">
@@ -19,7 +19,7 @@
                     </div>
                     <input type="email" value="" class="form-control" placeholder="Email" style="font-size: 16px;line-height: 24px;color: #141414;">
                   </div>
-                  <p style="text-align: left !important;font-size: 14px;line-height: 22px;color: #808080;">Password</p>
+                  <p class="input-label">Password</p>
                   <div class="input-group search" style="margin-top: -15px;">
                       <div class="input-group-append">
                         <div class="input-group-text">
@@ -43,9 +43,9 @@
               </div>
 
               <div *ngIf="isLoginWithProveApp">
-                <h5 style="font-weight: bold;">Log in with Prove App</h5>
-                <p>Scan the QR code below using the</p>
-                <p style="margin-top: -15px;">Prove app to receive a login request.</p>
+                <h5 class="title">Log in with Prove App</h5>
+                <p class="subtitle">Scan the QR code below using the</p>
+                <p class="subtitle" style="margin-top: -15px;">Prove app to receive a login request.</p>
                 <div class="qr-img">
                   <img src="assets/svg/qr.svg"/>
                 </div>

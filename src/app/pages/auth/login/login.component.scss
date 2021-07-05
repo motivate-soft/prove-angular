@@ -5,6 +5,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    background-color: #E5E5E5;
 }
   
 .middle {
@@ -16,19 +17,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 350px;
+    background: transparent;
     text-align: center;
-    background: #FFFFFF;
-    /* Whitesmoke */
-
-    border: 1px solid #F5F5F5;
-    box-sizing: border-box;
-    /* Input Shadow Primary */
-
-    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
-    border-radius: 8px;
-    padding: 0px 20px;
 }
 
+.card {
+  box-shadow: none;
+}
 .btn-login {
     border-radius: 10px;
     color: black;
@@ -40,6 +35,37 @@
     box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.16) !important;
     border-radius: 8px !important;
     margin: 16px 0px;
+}
+.card-body {
+    margin: 48px 0px;
+    text-align: center;
+    background: #FFFFFF;
+    /* Whitesmoke */
+
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    /* Input Shadow Primary */
+
+    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
+    border-radius: 8px;
+    padding: 0px 24px;
+}
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 16px 0px;
+    color: #141414;
+}
+.subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+}
+.input-label {
+    text-align: left !important;
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
 }
 
 .qr-img {
@@ -54,13 +80,6 @@
     border: 1px solid gray;
     background-color: transparent;
     border-radius: 8px;
-}
-
-.card {
-    box-shadow: none;
-}
-.card-body {
-  margin: 48px 0px;
 }
 
 /* The check-container */
