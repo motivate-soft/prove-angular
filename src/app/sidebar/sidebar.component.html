@@ -1,0 +1,20 @@
+
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a routerLink="" class="logo-normal">
+      <div>
+        <img src="assets/svg/logo.svg">
+      </div>
+    </a>
+  </div>
+  <ul class="nav">
+      <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+          <a (click)="urlRouter(menuItem.path)" style="display: flex;">
+              <!-- <i class="nc-icon {{menuItem.icon}}"></i> -->
+              <img *ngIf="currURL != menuItem.path" [src]="menuItem.icon"/>
+              <img *ngIf="currURL == menuItem.path" [src]="menuItem.activeIcon"/>
+              <p class="menu-title" [ngClass]="{'text-primary': currURL == menuItem.path }">{{menuItem.title}}</p>
+          </a>
+      </li>
+  </ul>
+</div>
