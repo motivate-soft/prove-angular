@@ -10,7 +10,7 @@
 }
 
 .wallet-toggle {
-    height: 40px;
+    height: 56px;
     /* Gainsboro */
     box-sizing: border-box;
 
@@ -20,6 +20,7 @@
     order: 0;
     flex-grow: 0;
     margin: 0px 16px;
+    background: #FFFFFF;
  }
 
  .wallet-toggle button {
@@ -30,22 +31,22 @@
     box-shadow: none;
     border: none;
     height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
 
     //styleName: Paragraph;
     font-family: 'Inter';
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
-    text-align: left;
 
     /* Inside Auto Layout */
 
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 5px;
+    margin: 0px 8px;
 }
 
 .wallet-toggle button span {
@@ -54,6 +55,7 @@
 
 .wallet-toggle button.active {
     color: #0D6EFD !important;
+    font-size: 16px;
     border-bottom: 2px solid #0D6EFD;
 }
 
