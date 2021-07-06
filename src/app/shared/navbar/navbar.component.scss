@@ -9,3 +9,25 @@
     box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
     border-radius: 8px;
 }
+
+.text-primary {
+    color: #0D6EFD;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#active_account_img {display: none;}
+#menu_account:hover #inactive_account_img {display: none;}
+#menu_account:hover #active_account_img {display: inline;}
+
+#active_org_img {display: none;}
+#menu_org:hover #inactive_org_img {display: none;}
+#menu_org:hover #active_org_img {display: inline;}
+
+#active_setting_img {display: none;}
+#menu_setting:hover #inactive_setting_img {display: none;}
+#menu_setting:hover #active_setting_img {display: inline;}
+
+#active_logout_img {display: none;}
+#menu_logout:hover #inactive_logout_img {display: none;}
+#menu_logout:hover #active_logout_img {display: inline;}

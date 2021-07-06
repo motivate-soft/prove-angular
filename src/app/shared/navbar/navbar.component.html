@@ -47,17 +47,25 @@
             </p>
           </a>
           <div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-menu-right">
-            <a ngbDropdownItem href="javascript:void(0)">
-              <img src="assets/svg/account.svg" style="width: 15px;margin-right: 10px;"/> My account
+            <a ngbDropdownItem href="javascript:void(0)" id="menu_account">
+              <img src="assets/svg/account.svg" id="inactive_account_img" style="width: 15px;margin-right: 10px;"/> 
+              <img src="assets/svg/account-active.svg" id="active_account_img" style="width: 15px;margin-right: 10px;"/> 
+              My account
             </a>
-            <a ngbDropdownItem href="javascript:void(0)">
-              <img src="assets/svg/users.svg" style="width: 15px;margin-right: 10px;"/> My organization
+            <a ngbDropdownItem href="javascript:void(0)" id="menu_org">
+              <img src="assets/svg/users.svg" id="inactive_org_img" style="width: 15px;margin-right: 10px;"/> 
+              <img src="assets/svg/users-active.svg" id="active_org_img" style="width: 15px;margin-right: 10px;"/> 
+              My organization
             </a>
-            <a ngbDropdownItem href="javascript:void(0)">
-              <img src="assets/svg/setting.svg" style="width: 15px;margin-right: 10px;"/> Settings
+            <a ngbDropdownItem href="javascript:void(0)" id="menu_setting">
+              <img src="assets/svg/setting.svg" id="inactive_setting_img" style="width: 15px;margin-right: 10px;"/> 
+              <img src="assets/svg/setting-active.svg" id="active_setting_img" style="width: 15px;margin-right: 10px;"/> 
+              Settings
             </a>
-            <a ngbDropdownItem href="javascript:void(0)">
-              <img src="assets/svg/logout.svg" style="width: 15px;margin-right: 10px;"/> Log out
+            <a ngbDropdownItem href="javascript:void(0)" id="menu_logout" (click)="logout()">
+              <img src="assets/svg/logout.svg" id="inactive_logout_img" style="width: 15px;margin-right: 10px;"/> 
+              <img src="assets/svg/logout-active.svg" id="active_logout_img" style="width: 15px;margin-right: 10px;"/> 
+              Log out
             </a>
           </div>
         </li>

@@ -85,11 +85,15 @@
   }
 }
 .dropdown-menu{
-    background-color: $white-color;
-    border: 0 none;
-    border-radius: $border-radius-extreme;
+    width: 248px;
+    background-color: #FFF;
+    border-radius: 8px;
     margin-top: 10px;
-    padding: 0px;
+    padding: 8px !important;
+
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 16px rgba(255, 198, 13, 0.04);
 
     .divider{
         background-color: $medium-pale-bg;
@@ -110,13 +114,16 @@
     }
 
     .dropdown-item{
-        color: $font-color;
-        font-size: $font-size-base;
-        padding: 10px 45px 10px 15px;
+        color: #808080;
+        font-size: 16px !important;
+        line-height: 24px;
         clear: both;
         white-space: nowrap;
         width: 100%;
         display: block;
+        border-radius: 8px;
+        width: 216px;
+        height: 40px;
 
        img{
            margin-top: -3px;
@@ -131,52 +138,17 @@
         min-width: 100%;
     }
 
-    .dropdown-item:first-child{
-       border-top-left-radius: $border-radius-extreme;
-       border-top-right-radius: $border-radius-extreme;
-    }
-
-    .dropdown-item:last-child{
-        border-bottom-left-radius: $border-radius-extreme;
-        border-bottom-right-radius: $border-radius-extreme;
-    }
-
-    .select & .dropdown-item:first-child{
-        border-radius: 0;
-        border-bottom: 0 none;
-    }
-
     .dropdown-item:hover,
     .dropdown-item:focus{
-        color: $white-color !important;
+        color: #0D6EFD !important;
+        cursor: pointer;
         opacity: 1;
         text-decoration: none;
 
     }
     .dropdown-item:hover,
     .dropdown-item:focus{
-        background-color: $default-color;
-    }
-
-    &.dropdown-primary .dropdown-item:hover,
-    &.dropdown-primary .dropdown-item:focus{
-        background-color: $bg-primary;
-    }
-    &.dropdown-info .dropdown-item:hover,
-    &.dropdown-info .dropdown-item:focus{
-        background-color: $bg-info;
-    }
-    &.dropdown-success .dropdown-item:hover,
-    &.dropdown-success .dropdown-item:focus{
-        background-color: $bg-success;
-    }
-    &.dropdown-warning .dropdown-item:hover,
-    &.dropdown-warning .dropdown-item:focus{
-        background-color: $bg-warning;
-    }
-    &.dropdown-danger .dropdown-item:hover,
-    &.dropdown-danger .dropdown-item:focus{
-        background-color: $bg-danger;
+        background-color: transparent;
     }
 
 }
@@ -184,10 +156,6 @@
     margin: 0 !important;
 }
 
-//fix bug for the select items in btn-group
-.btn-group.select{
-    // overflow: hidden;
-}
 .btn-group.select.open{
     overflow: visible;
 }

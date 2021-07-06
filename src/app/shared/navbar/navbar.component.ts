@@ -18,9 +18,9 @@ export class NavbarComponent implements OnInit{
     private sidebarVisible: boolean;
 
     public isCollapsed = true;
-    @ViewChild("navbar-cmp", {static: false}) button;
+    @ViewChild('navbar-cmp', {static: false}) button;
 
-    constructor(location:Location, private renderer : Renderer2, private element : ElementRef, private router: Router) {
+    constructor(location: Location, private renderer: Renderer2, private element: ElementRef, private router: Router) {
         this.location = location;
         this.nativeElement = element.nativeElement;
         this.sidebarVisible = false;
@@ -79,7 +79,7 @@ export class NavbarComponent implements OnInit{
           this.sidebarVisible = false;
           html.classList.remove('nav-open');
       };
-      collapse(){
+      collapse() {
         this.isCollapsed = !this.isCollapsed;
         const navbar = document.getElementsByTagName('nav')[0];
         console.log(navbar);
@@ -92,5 +92,8 @@ export class NavbarComponent implements OnInit{
         }
 
       }
+    logout() {
+      this.router.navigate(['/']);
+    }
 
 }
