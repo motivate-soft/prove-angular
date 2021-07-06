@@ -8,12 +8,12 @@
     </a>
   </div>
   <ul class="nav">
-      <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
-          <a (click)="urlRouter(menuItem.path)" style="display: flex;" [ngClass]="{'active-menu': currURL == menuItem.path }">
+      <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}" [ngStyle]="{'height': menuItem.subMenu && selectedMenuId != menuItem.parent ? '0px' : auto}">
+          <a (click)="urlRouter(menuItem)" style="display: flex;" [ngClass]="{'active-menu': currURL == menuItem.path }" *ngIf="!menuItem.subMenu || selectedMenuId == menuItem.parent">
               <!-- <i class="nc-icon {{menuItem.icon}}"></i> -->
-              <img *ngIf="currURL != menuItem.path" [src]="menuItem.icon"/>
-              <img *ngIf="currURL == menuItem.path" [src]="menuItem.activeIcon"/>
-              <p class="menu-title" [ngClass]="{'text-primary': currURL == menuItem.path }">{{menuItem.title}}</p>
+              <img *ngIf="currURL != menuItem.path" [src]="menuItem.icon" [ngStyle]="{'visibility': menuItem.subMenu ? 'hidden' : 'visible'}"/>
+              <img *ngIf="currURL == menuItem.path" [src]="menuItem.activeIcon" [ngStyle]="{'visibility': menuItem.subMenu ? 'hidden' : 'visible'}"/>
+              <p class="menu-title" [ngClass]="{'text-primary': !menuItem.subMenu && currURL == menuItem.path }">{{menuItem.title}}</p>
           </a>
       </li>
   </ul>
